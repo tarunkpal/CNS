@@ -18,13 +18,14 @@ import json
 import csv
 import os
 import re
+from dotenv import load_dotenv
 
 
 # from pandas2arff import pandas2arff
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 
-key = 'g8g0csg4wg88k8wo004s8k0soccokc040c0w0sk0'
+key = os.getenv("API")
 
 import signal
 import threading
